@@ -72,8 +72,8 @@ class Readwise:
 			title = memo['text'].split('\n')[0]
 			if len(title) > 20: title = title[:20] + '...'
 			hl.title = title
-	        if len(hl.title) <= 0:
-			hl.title = "未知标题" # ignore this title :(
+		if len(hl.title) <= 0:
+			hl.title = '未知标题' # ignore this title 
 		hl.note = self.convert_tags_to_note(memo['tags'])
 		hl.highlight_url = memo['flomo_url']
 		hl.highlighted_at = self.convert_memotime_to_iso8601(memo['edit_time'])
