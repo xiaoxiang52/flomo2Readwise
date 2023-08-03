@@ -1,0 +1,6 @@
+2023-08-03 12:01:21.313 | INFO     | logger:log:13 - Last sync time: 2023-08-02 03:17:49.149830
+2023-08-03 12:01:54.114 | INFO     | logger:log:13 - Error message: [{'text': '智慧城市和新型智慧城市\r\n\r\n#定义 #区别 #定义/区别', 'title': '智慧城市和新型智慧城市\r', 'source_type': 'flomo-Notion', 'note': '.定义 .区别 .定义 .区别', 'highlighted_at': '2023-08-03T11:42:00.000+00:00', 'highlight_url': 'https://v.flomoapp.com/mine/?memo_id=NDM1Nzk4NTI'}]
+2023-08-03 12:01:54.368 | INFO     | logger:log:13 - Update last sync time: 2023-07-31T14:44:00.000000
+2023-08-03 12:02:27.217 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2023-08-03 12:02:27.217 | INFO     | logger:log:13 - Finished
+2023-08-03 12:02:27.218 | INFO     | logger:log:13 - 
