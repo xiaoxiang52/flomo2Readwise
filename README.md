@@ -1,8 +1,8 @@
 # flomo2Readwise
+
 Sync flomo memos from Notion database to Readwise by GitHub Action.
 
 通过 GitHub Action，自动将 flomo 笔记从 Notion database 同步至 Readwise。
-
 
 ## Preparation
 
@@ -13,7 +13,6 @@ Sync flomo memos from Notion database to Readwise by GitHub Action.
    - 获取该 Notion Integration 的 Token
    - 获取该 Notion Database 的 ID
 3. 获取 Readwise Access Token: https://readwise.io/access_token
-
 
 ## Usage
 
@@ -26,24 +25,26 @@ Sync flomo memos from Notion database to Readwise by GitHub Action.
    - `NOTION_INTEGRATION_TOKEN`: 你的 Notion Integration Token
    - `NOTION_DATABASE_ID`: 你的 Notion Database ID
    - `READWISE_ACCESS_TOKEN`: 你的 Readwise Access Token
+   - `MEMO_TOKEN`: 你的 flomoapp Token
+
+ps: MEMO_TOKEN 获取方法: 打开 flomoapp.com 在登录了之后 -> f12 -> copy(JSON.parse( localStorage.getItem('me')).access_token) -> 将会复制到剪贴板
 
 设置好以上步骤后，GitHub Actions 将会每天自动运行并将你的 flomo 笔记同步到 Readwise。
 
-
-##  Others
+## Others
 
 1. 手动触发执行同步
-   
+
    完成上述设置后，在你的仓库页面，进入 `Actions` → `Sync flomo from Notion database to Readwise`， 点击 `Run Workflow` 可以手动触发执行同步。
 
 2. 修改同步时间
-   
+
    修改 `.github/workflows/sync_flomo_to_readwise.yml` 文件中以下字段自定义执行时间和频率。规则请参考[官方文档](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)。
+
    ```
    schedule:
    	- cron: '0 3 * * *'  # Runs daily at 03:00 UTC
    ```
-
 
 ## Acknowledgments
 

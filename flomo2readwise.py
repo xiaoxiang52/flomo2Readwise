@@ -56,10 +56,9 @@ def sync_flomo_to_readwise():
     # Fetch flomo memos
     flomo_database = FlomoDatabase(
         NOTION_INTEGRATION_TOKEN, NOTION_DATABASE_ID, logger)
-    flomo_memos = flomo_database.fetch_flomo_memos(
+    flomo_database.fetch_flomo_memos(
         sync_callback,
         last_sync_time=last_sync_time)
-    logger.log('Number of flomo memos to sync:', len(flomo_memos))
 
     logger.log('Finished')
     logger.log('')

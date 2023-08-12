@@ -42,7 +42,6 @@ class Readwise:
     """ Create highlights in Readwise """
 
     def create_highlights(self, highlights: List[Dict]):
-        self.logger.log(f'Error message: {highlights}')
         res = requests.post(
             url=self.highlight_create_url,
             headers=self.headers,
